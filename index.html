@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="light" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui & tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/about.png" type="image/x-icon">
+    <title>Creamy</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                pink1: '#da2164',
+              },
+              
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-Poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-Poppins">
+    <nav class="navbar xl:px-12 p-1 bg-white sticky top-0 z-50">
+        <div>
+          <img src="./images/logo.png" alt="" class="w-48 md:w-80 lg:w-48 xl:w-80">
+        </div>
+        <div class="ml-auto hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base xl:text-xl font-bold text-pink-600 ">
+            <li><a href="#HOME" class="hover:text-white hover:bg-pink-600">HOME</a></li>
+            <li><a href="#PRODUCT" class="hover:text-white hover:bg-pink-600">PRODUCT</a></li>
+            <li><a href="#ABOUT" class="hover:text-white hover:bg-pink-600">ABOUT</a></li>
+            <li><a href="#TESTIMONIAL" class="hover:text-white hover:bg-pink-600">TESTIMONIAL</a></li>
+            <li><a href="#SERVICE" class="hover:text-white hover:bg-pink-600">SERVICE</a></li>
+            <li><a href="#CONTACT" class="hover:text-white hover:bg-pink-600">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="ml-auto lg:ml-0">
+          <span class="hidden md:block"><a class="btn btn-secondary xl:btn-lg ">SING UP</a></span>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-36 bg-white">
+                  <li><a href="#HOME" class="hover:text-white hover:bg-pink-600">HOME</a></li>
+                  <li><a href="#PRODUCT" class="hover:text-white hover:bg-pink-600">PRODUCT</a></li>
+                  <li><a href="#ABOUT" class="hover:text-white hover:bg-pink-600">ABOUT</a></li>
+                  <li><a href="#TESTIMONIAL" class="hover:text-white hover:bg-pink-600">TESTIMONIAL</a></li>
+                  <li><a href="#SERVICE" class="hover:text-white hover:bg-pink-600">SERVICE</a></li>
+                  <li><a href="#CONTACT" class="hover:text-white hover:bg-pink-600">CONTACT</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>  
+    <header id="HOME" class="flex flex-col lg:flex-row justify-between items-center text-center gap-10 bg-pink-600">
+      <div class="flex-1 lg:pl-10 p-5">
+        <img src="./images/text.png" alt="">
+        <button class="btn btn-secondary btn-lg">SHOW NOW</button>
+      </div>
+      <div class="flex-1">
+        <img src="./images/hero.jpg" alt="" class="pr-0">
+      </div>
+    </header>
+    <main class="w-[90%] mx-auto">
+      <section id="PRODUCT" class="text-center my-10 md:my-16 lg:my-20">
+        <h1 class="font-bold text-3xl md:text-5xl my-5 md:my-10">OUR PRODUCT</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <!-- card  -->
+        <div class="card  text-center">
+          <figure><img src="./images/p1.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">MILK <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$20.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+          <!-- card  -->
+        <div class="card  text-center">
+          <figure><img src="./images/p2.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">CHOCOLATE <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$10.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+          <!-- card  -->
+        <div class="card  text-center">
+          <figure><img src="./images/p3.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">STRAWBERRY <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$30.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+          <!-- card  -->
+        <div class="card  text-center">
+          <figure><img src="./images/p4.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">VANILLA <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$40.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+
+          <!-- card  -->
+        <div class="card  text-center hidden lg:block">
+          <figure><img src="./images/p3.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">STRAWBERRY <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$30.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+          <!-- card  -->
+        <div class="card  text-center hidden lg:block">
+          <figure><img src="./images/p4.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">VANILLA <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$40.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card  text-center hidden xl:block">
+          <figure><img src="./images/p1.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">MILK <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$20.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+          <!-- card  -->
+        <div class="card  text-center hidden xl:block">
+          <figure><img src="./images/p2.png" alt="ice cream" /></figure>
+          <div class="card-body ">
+            <h2 class=" text-3xl text-pink1 font-bold">CHOCOLATE <br><span class="text-xl">ICE CREAM</span></h2>
+            <p class="text-3xl font-extrabold my-1 md:my-1 lg:my-2">$10.00</p>
+            <span class="bg-gray-300 text-2xl xl:text-3xl w-14 h-14 rounded-full flex justify-center items-center hover:text-white hover:bg-pink1 mx-auto pt-[1px] pl-[1px] cursor-pointer">+</span>
+          </div>
+        </div>
+
+        </div>
+      </section>
+      <section id="ABOUT" class="flex flex-col-reverse lg:flex-row justify-between items-center text-center lg:text-left gap-10">
+        <div class="flex-1">
+          <img src="./images/about.png" alt="">
+        </div>
+        <div class="flex-1">
+          <h1 class="font-extrabold text-3xl md:text-4xl italic">TUTTI FRUTI</h1>
+          <h1 class="font-extrabold text-4xl md:text-7xl text-pink1 my-4 xl:my-8">CHOOSE YOUR <br>
+            PLEASURE</h1>
+            <p class="text-lg md:text-xl  font-bold">TUTTI FRUTTI IS A POPULAR FLAVOR OF ICE CREAM,
+              CANDY, AND OTHER SWEET TREATS THAT IS KNOWN
+              FOR ITS FRUITY AND COLORFUL TASTE. THE TERM.</p>
+            <button class="btn btn-secondary xl:btn-lg mt-4 xl:mt-8">LEARN MORE</button>
+        </div>
+      </section>
+      <section id="TESTIMONIAL" class="text-center my-10 md:my-16 lg:my-20">
+        <h1 class="text-xl md:text-3xl text-pink1 font-extrabold italic">TESTIMONIAL</h1>
+        <h1 class="text-3xl md:text-5xl xl:text-7xl font-extrabold my-4 xl:my-8">WHAT OUR CLIENTS SAYS</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        <!-- card  -->
+        <div class="card border hover:shadow-2xl text-center">
+          <figure><img src="./images/t1.png" alt="img" class="rounded-full border-4 border-pink1 mt-5"/></figure>
+          <div class="card-body ">
+            <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima nam asperiores, blanditiis adipisci neque ipsa perferendis.</p>
+            <h2 class=" text-2xl lg:text-4xl text-pink1 font-extrabold mt-1 lg:mt-2">KARI W. STEWART</h2>
+            <p class="text-base font-bold">Business man</p>
+            <div class="rating  rating-lg mx-auto my-1 md:my-2 lg:my-3">
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-pink1"  />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-pink1" checked/>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-pink-600" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure><img src="./images/t1.png" alt="img" class="rounded-full border-4 border-pink1 mt-5"/></figure>
+                <div class="card-body ">
+                  <h2 class=" text-3xl md:text-4xl text-pink1 font-extrabold">KARI W. STEWART</h2>
+                  <p class="text-lg my-1 md:my-1 lg:my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolore consequatur corporis beatae tempora et reprehenderit at nesciunt ipsa amet perferendis tenetur obcaecati consequuntur inventore, atque </p>
+                  <div class="rating  rating-lg mx-auto my-1 md:my-2 lg:my-3">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink1"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink1" checked/>
+                  </div>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-secondary mx-auto">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card border hover:shadow-2xl text-center">
+          <figure><img src="./images/t3.png" alt="img" class="rounded-full border-4 border-pink1 mt-5"/></figure>
+          <div class="card-body ">
+            <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima nam asperiores, blanditiis adipisci neque ipsa perferendis.</p>
+            <h2 class=" text-2xl lg:text-4xl text-pink1 font-extrabold mt-1 lg:mt-2">KARI W. STEWART</h2>
+            <p class="text-base font-bold">Business man</p>
+            <div class="rating  rating-lg mx-auto my-1 md:my-2 lg:my-3">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-pink1"  />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-pink1" checked/>
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-pink1" />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-pink-600" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure><img src="./images/t3.png" alt="img" class="rounded-full border-4 border-pink1 mt-5"/></figure>
+                <div class="card-body ">
+                  <h2 class=" text-3xl md:text-4xl text-pink1 font-extrabold">KARI W. STEWART</h2>
+                  <p class="text-lg my-1 md:my-1 lg:my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolore consequatur corporis beatae tempora et reprehenderit at nesciunt ipsa amet perferendis tenetur obcaecati consequuntur inventore, atque </p>
+                  <div class="rating  rating-lg mx-auto my-1 md:my-2 lg:my-3">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-pink1"  />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-pink1" checked/>
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-pink1" />
+                  </div>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-secondary mx-auto">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card border hover:shadow-2xl text-center">
+          <figure><img src="./images/t2.png" alt="img" class="rounded-full border-4 border-pink1 mt-5"/></figure>
+          <div class="card-body ">
+            <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima nam asperiores, blanditiis adipisci neque ipsa perferendis.</p>
+            <h2 class=" text-2xl lg:text-4xl text-pink1 font-extrabold mt-1 lg:mt-2">KARI W. STEWART</h2>
+            <p class="text-base font-bold">Business man</p>
+            <div class="rating  rating-lg mx-auto my-1 md:my-2 lg:my-3">
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-pink1"  />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-pink1" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-pink1" checked/>
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-pink1" />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-pink-600" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure><img src="./images/t2.png" alt="img" class="rounded-full border-4 border-pink1 mt-5"/></figure>
+                <div class="card-body ">
+                  <h2 class=" text-3xl md:text-4xl text-pink1 font-extrabold">KARI W. STEWART</h2>
+                  <p class="text-lg my-1 md:my-1 lg:my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolore consequatur corporis beatae tempora et reprehenderit at nesciunt ipsa amet perferendis tenetur obcaecati consequuntur inventore, atque </p>
+                  <div class="rating  rating-lg mx-auto my-1 md:my-2 lg:my-3">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-pink1"  />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-pink1" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-pink1" checked/>
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-pink1" />
+                  </div>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-secondary mx-auto">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        
+        </div>
+      </section>
+      <section id="SERVICE" class="text-center my-10 md:my-16 lg:my-24 bg-pink1 shadow-2xl shadow-pink1 py-10 md:py-20 lg:py-28 rounded-3xl text-white">
+        <h1 class="text-2xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold">TAKE - OUT SERVICE</h1>
+        <div class="flex flex-col md:flex-row justify-center items-center md:gap-10 xl:gap-20 text-xl md:text-3xl lg:text-4xl font-bold mt-4 xl:mt-8">
+          <h1>AVALIABLE DAILY</h1>
+          <h1>o</h1>
+          <h1>9AM - 12PM</h1>
+        </div>
+      </section>
+      <section id="CONTACT">
+        <section>
+          <section class="bg-white ">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-center">
+                <h2 class="font-bold text-3xl md:text-5xl my-5 md:my-10">Contact Us</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                <form class="space-y-8 text-start">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-pink-50 border border-pink-600 outline-none text-sm rounded-lg block w-full p-2.5" placeholder="name@flowbite.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm bg-pink-50 rounded-lg border border-pink-600 outline-none shadow-sm " placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 resize-none w-full text-sm bg-pink-50 rounded-lg shadow-sm border border-pink-600 outline-none 0" placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button class="btn btn-secondary xl:btn-lg mt-4 xl:mt-8">Send message</button>
+                </form>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer class="p-10 lg:px-[5%] bg-pink-900 text-base-content text-white">
+      <div class="footer">
+        <div>
+          <img src="./images/footerlogo.png" alt="">
+          <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+        </div> 
+        <div>
+          <span class="footer-title">Services</span> 
+          <a class="link link-hover">Branding</a> 
+          <a class="link link-hover">Design</a> 
+          <a class="link link-hover">Marketing</a> 
+          <a class="link link-hover">Advertisement</a>
+        </div> 
+        <div>
+          <span class="footer-title">Company</span> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Jobs</a> 
+          <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+          <span class="footer-title">Legal</span> 
+          <a class="link link-hover">Terms of use</a> 
+          <a class="link link-hover">Privacy policy</a> 
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
